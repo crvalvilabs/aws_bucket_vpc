@@ -3,3 +3,8 @@ output "public_network_interface_id" {
   # El output debe exportar el ID de la network interface en sí, no el subnet_id.
   value       = aws_network_interface.public_network_interface.id
 }
+
+output "internet_gateway_info" {
+  description = "ID del Internet Gateway asociado a la VPC"
+  value       = aws_internet_gateway.internet_gw.arn
+}
