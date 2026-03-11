@@ -21,11 +21,15 @@ dev_infrastructure = {
     {
       "name" : "silver-dev-bucket",
       "description" : "Bucket de plata para el entorno de desarrollo"
+    },
+    {
+      "name" : "gold-dev-bucket",
+      "description" : "Bucket de oro para el entorno de desarrollo"
     }
   ],
   "os" : {
     "name" : "ubuntu-jammy-22.04-amd64-server",
-    "ami_id" : "ami-0c2b8ca1dad447f8",
+    "ami_id" : "ami-12345678",
     "instance_type" : "t2.micro",
     "description" : "Sistema operativo para las instancias EC2"
   },

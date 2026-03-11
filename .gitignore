@@ -1,2 +1,7 @@
-dev/.terraform
-terraform.tfstate
+# No incluir la carpeta .terraform
+.terraform/
+# No incluir archivos de estado de Terraform
+*.tfstate
+*.tfstate.backup
+# No incluir archivos lock de Terraform
+.terraform.lock.hcl
