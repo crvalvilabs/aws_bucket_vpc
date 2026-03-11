@@ -29,3 +29,7 @@ variable "dev_infrastructure" {
         })
     }))
 }
+
+# No se necesita declarar la variable public_network_interface_id ya que viene del módulo
+# network y se pasa como argumento al módulo ec2 en el main.tf.
+# Es decir: No necesitas variable en dev porque el valor no viene del exterior del proyecto, sino de otro módulo dentro del mismo entorno.

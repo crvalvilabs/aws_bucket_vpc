@@ -3,7 +3,7 @@ resource "aws_instance" "ubuntu" {
   instance_type = var.dev_infrastructure.os.instance_type
 
   primary_network_interface {
-    network_interface_id = aws_network_interface.public_network_interface.id
+    network_interface_id = var.public_network_interface_id
   }
 
     tags = {

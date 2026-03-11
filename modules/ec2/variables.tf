@@ -28,3 +28,9 @@ variable "dev_infrastructure" {
         })
     }))
 }
+
+# Los modulos no pueden referenciarse entre si, por lo que se debe pasar el id de la interfaz de red pública como variable al módulo de EC2
+variable "public_network_interface_id" {
+  description = "ID de la interfaz de red pública para la instancia EC2"
+  type        = string
+}
